@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- saved from url=(0254)file:///C:/Users/cookl/OneDrive/%EB%AC%B8%EC%84%9C/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1%20%EB%B0%9B%EC%9D%80%20%ED%8C%8C%EC%9D%BC/%EB%A9%94%ED%83%88%EC%A0%A0%ED%85%8D_%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84_%EB%9E%9C%EB%94%A9%ED%8E%98%EC%9D%B4%EC%A7%80.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>메탈젠텍 | Engineering Intelligence</title>
+<meta name="description" content="메탈젠텍 — 철강·공정·열유동·구조·자기장 해석 기반 엔지니어링 솔루션">
+<style>
+:root{
+  --ink:#0b1220; --navy:#101d32; --steel:#4d6178; --line:#dce3ea;
+  --paper:#f5f7f9; --white:#fff; --accent:#1aa6a0; --gold:#b59a62;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:"Pretendard","Noto Sans KR",Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.65}
+a{text-decoration:none;color:inherit}.wrap{width:min(1180px,92%);margin:auto}
+header{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(8,17,30,.82);backdrop-filter:blur(14px);color:#fff;border-bottom:1px solid rgba(255,255,255,.1)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:.08em}.brand small{display:block;font-size:10px;letter-spacing:.18em;opacity:.65}
+nav a{margin-left:28px;font-size:13px;opacity:.82}nav a:hover{opacity:1;color:#8ce3dc}
+.hero{min-height:92vh;background:
+radial-gradient(circle at 78% 24%,rgba(26,166,160,.2),transparent 26%),
+linear-gradient(120deg,#07101d 0%,#102137 55%,#1b2c40 100%);color:#fff;display:flex;align-items:center;padding:150px 0 100px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:70px;align-items:center}
+.kicker{color:#8ce3dc;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+h1{font-size:clamp(44px,6vw,78px);line-height:1.04;letter-spacing:-.055em;margin:20px 0}
+h1 span{color:#8ce3dc}.hero p{font-size:19px;color:#cbd6e2;max-width:650px}
+.actions{display:flex;gap:12px;margin-top:34px;flex-wrap:wrap}.btn{padding:14px 22px;border:1px solid rgba(255,255,255,.22);border-radius:999px;font-size:14px}.btn.primary{background:#8ce3dc;color:#07151e;border-color:#8ce3dc;font-weight:800}
+.visual{height:430px;position:relative;border:1px solid rgba(255,255,255,.15);border-radius:28px;background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.015));overflow:hidden}
+.gridlines{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);background-size:42px 42px;transform:perspective(500px) rotateX(58deg) scale(1.4);transform-origin:center bottom;opacity:.6}
+.orbit{position:absolute;width:330px;height:330px;border:1px solid rgba(140,227,220,.55);border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%) rotate(18deg)}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid rgba(181,154,98,.5);border-radius:50%;inset:45px;transform:rotate(55deg)}.orbit:after{inset:95px;transform:rotate(-28deg)}
+.core{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:105px;height:105px;border-radius:50%;background:radial-gradient(circle,#b9fffa 0,#1aa6a0 35%,#0b2635 72%);box-shadow:0 0 60px rgba(26,166,160,.45)}
+section{padding:115px 0}.section-head{max-width:760px;margin-bottom:55px}.eyebrow{font-size:12px;font-weight:800;color:var(--accent);letter-spacing:.16em}.section-head h2{font-size:clamp(32px,4vw,54px);line-height:1.12;letter-spacing:-.04em;margin:12px 0 16px}.section-head p{color:#5d6a79;font-size:17px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.stat{padding:32px 20px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat strong{display:block;font-size:31px;letter-spacing:-.03em}.stat span{font-size:13px;color:#718092}
+.dark{background:var(--navy);color:#fff}.dark .section-head p{color:#b6c3d0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.feature{border-left:2px solid var(--accent);padding-left:24px;margin:28px 0}.feature h3{margin:0 0 7px;font-size:21px}.feature p{margin:0;color:#647284}
+.dark .feature p{color:#b8c4d1}
+.services{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.service{background:#fff;padding:38px;min-height:220px;transition:.3s}.service:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(13,28,45,.08);position:relative;z-index:2}.service .num{font-size:12px;color:var(--gold);font-weight:800;letter-spacing:.14em}.service h3{font-size:25px;margin:15px 0 9px}.service p{color:#657385;margin:0}
+.process{display:grid;grid-template-columns:repeat(6,1fr);gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.step{padding:25px 18px;border-right:1px solid var(--line)}.step:last-child{border:0}.step b{display:block;font-size:12px;color:var(--accent);margin-bottom:10px}.step strong{font-size:17px}.step p{font-size:13px;color:#687789}
+.quote{font-size:clamp(30px,4.3vw,56px);line-height:1.2;letter-spacing:-.045em;max-width:950px}.quote em{color:#8ce3dc;font-style:normal}
+.faq{max-width:900px}.faq details{border-top:1px solid var(--line);padding:22px 0}.faq details:last-child{border-bottom:1px solid var(--line)}summary{cursor:pointer;font-weight:700;font-size:17px}.faq p{color:#667587;max-width:800px}
+.cta{padding:100px 0;background:linear-gradient(135deg,#0b1829,#123149);color:#fff}.cta-inner{display:flex;justify-content:space-between;gap:40px;align-items:center}.cta h2{font-size:clamp(34px,4vw,58px);line-height:1.1;letter-spacing:-.045em;margin:0 0 15px}.cta p{color:#c2d0dc;max-width:650px}
+footer{background:#07101b;color:#9eacba;padding:35px 0;font-size:12px}.footer-flex{display:flex;justify-content:space-between;gap:20px}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:900px){
+ .hero-grid,.split{grid-template-columns:1fr}.visual{height:330px}.stats{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+ .process{grid-template-columns:repeat(2,1fr)}.step:nth-child(2n){border-right:0}.step{border-bottom:1px solid var(--line)}.services{grid-template-columns:1fr}.cta-inner{display:block}nav{display:none}
+}
+@media(max-width:560px){section{padding:80px 0}.hero{padding-top:120px}.hero p{font-size:16px}.visual{height:270px}.orbit{width:220px;height:220px}.core{width:75px;height:75px}.stats{grid-template-columns:1fr}.stat{border-right:0!important;border-bottom:1px solid var(--line)}.stat:last-child{border-bottom:0}.process{grid-template-columns:1fr}.step{border-right:0}.footer-flex{display:block}.footer-flex div+div{margin-top:12px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><div class="brand">METALGEN<span>TECH</span><small>ENGINEERING INTELLIGENCE</small></div><nav><a href="file:///C:/Users/cookl/OneDrive/%EB%AC%B8%EC%84%9C/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1%20%EB%B0%9B%EC%9D%80%20%ED%8C%8C%EC%9D%BC/%EB%A9%94%ED%83%88%EC%A0%A0%ED%85%8D_%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84_%EB%9E%9C%EB%94%A9%ED%8E%98%EC%9D%B4%EC%A7%80.html#about">ABOUT</a><a href="file:///C:/Users/cookl/OneDrive/%EB%AC%B8%EC%84%9C/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1%20%EB%B0%9B%EC%9D%80%20%ED%8C%8C%EC%9D%BC/%EB%A9%94%ED%83%88%EC%A0%A0%ED%85%8D_%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84_%EB%9E%9C%EB%94%A9%ED%8E%98%EC%9D%B4%EC%A7%80.html#services">SOLUTIONS</a><a href="file:///C:/Users/cookl/OneDrive/%EB%AC%B8%EC%84%9C/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1%20%EB%B0%9B%EC%9D%80%20%ED%8C%8C%EC%9D%BC/%EB%A9%94%ED%83%88%EC%A0%A0%ED%85%8D_%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84_%EB%9E%9C%EB%94%A9%ED%8E%98%EC%9D%B4%EC%A7%80.html#process">PROCESS</a><a href="file:///C:/Users/cookl/OneDrive/%EB%AC%B8%EC%84%9C/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1%20%EB%B0%9B%EC%9D%80%20%ED%8C%8C%EC%9D%BC/%EB%A9%94%ED%83%88%EC%A0%A0%ED%85%8D_%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84_%EB%9E%9C%EB%94%A9%ED%8E%98%EC%9D%B4%EC%A7%80.html#faq">FAQ</a><a href="file:///C:/Users/cookl/OneDrive/%EB%AC%B8%EC%84%9C/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1%20%EB%B0%9B%EC%9D%80%20%ED%8C%8C%EC%9D%BC/%EB%A9%94%ED%83%88%EC%A0%A0%ED%85%8D_%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84_%EB%9E%9C%EB%94%A9%ED%8E%98%EC%9D%B4%EC%A7%80.html#contact">CONTACT</a></nav></div></header>
+
+<main>
+<section class="hero"><div class="wrap hero-grid">
+<div class="reveal show">
+<div class="kicker">MetalGenTech · Engineering Intelligence</div>
+<h1>현장을 이해하는<br><span>해석 기술</span>에서<br>의사결정의 기술로.</h1>
+<p>메탈젠텍은 철강·공정 분야의 수치해석과 엔지니어링 역량을 기반으로 열유동, 구조, 자기장 및 공정 분석을 수행합니다. 앞으로는 측정·데이터·AI를 연결해 산업현장의 더 나은 판단을 지원합니다.</p>
+<div class="actions"><a class="btn primary" href="file:///C:/Users/cookl/OneDrive/%EB%AC%B8%EC%84%9C/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1%20%EB%B0%9B%EC%9D%80%20%ED%8C%8C%EC%9D%BC/%EB%A9%94%ED%83%88%EC%A0%A0%ED%85%8D_%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84_%EB%9E%9C%EB%94%A9%ED%8E%98%EC%9D%B4%EC%A7%80.html#contact">기술 상담 문의</a><a class="btn" href="file:///C:/Users/cookl/OneDrive/%EB%AC%B8%EC%84%9C/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1%20%EB%B0%9B%EC%9D%80%20%ED%8C%8C%EC%9D%BC/%EB%A9%94%ED%83%88%EC%A0%A0%ED%85%8D_%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84_%EB%9E%9C%EB%94%A9%ED%8E%98%EC%9D%B4%EC%A7%80.html#services">솔루션 살펴보기</a></div>
+</div>
+<div class="visual reveal show"><div class="gridlines"></div><div class="orbit"></div><div class="core"></div></div>
+</div></section>
+
+<section id="about"><div class="wrap">
+<div class="section-head reveal"><div class="eyebrow">01 · COMPANY</div><h2>복잡한 산업 문제를<br>공학적으로 구조화합니다.</h2><p>공개 자료를 기반으로 구성한 메탈젠텍의 핵심 영역입니다. 일부 회사 정보와 실적 수치는 최신 공식자료 확인 후 게시하는 것을 권장합니다.</p></div>
+<div class="stats reveal">
+<div class="stat"><strong>2008</strong><span>설립연도 · 공개자료 기준</span></div>
+<div class="stat"><strong>Engineering</strong><span>전문 엔지니어링·해석 역량</span></div>
+<div class="stat"><strong>Steel</strong><span>철강·공정 분야 중심</span></div>
+<div class="stat"><strong>AI + Data</strong><span>미래 확장 방향 · 전략 제안</span></div>
+</div>
+</div></section>
+
+<section class="dark"><div class="wrap split">
+<div class="section-head reveal"><div class="eyebrow">02 · WHY METALGEN</div><h2>기술을 계산에서<br>현장의 가치로.</h2><p>단순한 결과값보다 중요한 것은 결과를 실제 의사결정에 연결하는 것입니다.</p></div>
+<div class="reveal">
+<div class="feature"><h3>산업 현장 중심의 해석</h3><p>철강 및 제조 공정에서 발생하는 복합적인 열·유동·구조·자기장 문제를 공학적으로 분석합니다.</p></div>
+<div class="feature"><h3>다양한 해석 영역의 결합</h3><p>열유동, 금속재료, 공정분석, 구조·환경 및 공정 시뮬레이션 등으로 문제를 다각도로 접근합니다.</p></div>
+<div class="feature"><h3>Engineering Intelligence로 확장</h3><p>측정 → 모델링 → 예측 → 최적화 → 모니터링으로 이어지는 데이터 기반 엔지니어링을 지향합니다.</p></div>
+</div>
+</div></section>
+
+<section id="services"><div class="wrap">
+<div class="section-head reveal"><div class="eyebrow">03 · SOLUTIONS</div><h2>필요한 문제에서 시작해<br>맞춤형 해석으로 답을 찾습니다.</h2><p>자료에 제시된 기술·솔루션 영역을 중심으로 랜딩페이지용으로 재구성했습니다.</p></div>
+<div class="services reveal">
+<div class="service"><div class="num">01 / ANALYSIS</div><h3>열유동·공정 해석</h3><p>열유동, 공정분석, 공정 시뮬레이션 등 생산공정의 현상을 모델링하고 분석합니다.</p></div>
+<div class="service"><div class="num">02 / MATERIAL</div><h3>금속재료·주조 공정</h3><p>제철·제강·연주 및 Die Casting, Lost Foam 등 금속 소재·주조 관련 기술 영역을 다룹니다.</p></div>
+<div class="service"><div class="num">03 / STRUCTURE</div><h3>구조·환경 해석</h3><p>구조 및 환경 관련 문제를 공학적 모델과 시뮬레이션을 통해 검토합니다.</p></div>
+<div class="service"><div class="num">04 / MEASUREMENT</div><h3>측정·엔지니어링 시스템</h3><p>UVP, WDTMS, Electric Steam Trap, Bypass System 등 공개 자료에 제시된 기술·제품 영역을 포함합니다.</p></div>
+</div>
+</div></section>
+
+<section id="process" class="dark"><div class="wrap">
+<div class="section-head reveal"><div class="eyebrow">04 · PROCESS</div><h2>현상을 이해하고,<br>실행 가능한 해법으로 연결합니다.</h2></div>
+<div class="process reveal">
+<div class="step"><b>01</b><strong>Measure</strong><p>현상과 데이터를 파악</p></div>
+<div class="step"><b>02</b><strong>Model</strong><p>문제를 공학적으로 모델링</p></div>
+<div class="step"><b>03</b><strong>Predict</strong><p>거동과 결과를 예측</p></div>
+<div class="step"><b>04</b><strong>Optimize</strong><p>개선 대안을 비교·검토</p></div>
+<div class="step"><b>05</b><strong>Monitor</strong><p>현장 적용과 변화 추적</p></div>
+<div class="step"><b>06</b><strong>Intelligence</strong><p>데이터 기반 의사결정으로 확장</p></div>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<div class="section-head reveal"><div class="eyebrow">05 · FUTURE</div><h2>Engineering + Measurement<br>+ Data + AI + Digital Twin</h2></div>
+<div class="quote reveal">메탈젠텍의 다음 성장은 새로운 기술 하나를 추가하는 것이 아니라, <em>이미 가진 엔지니어링 기술을 데이터와 AI로 연결하는 것</em>에서 시작합니다.</div>
+</div></section>
+
+<section id="faq" class="dark"><div class="wrap">
+<div class="section-head reveal"><div class="eyebrow">06 · FAQ</div><h2>자주 묻는 질문</h2></div>
+<div class="faq reveal">
+<details><summary>어떤 산업 문제를 상담할 수 있나요?</summary><p>철강 및 제조공정의 열유동, 구조, 자기장, 금속재료, 공정분석 및 시뮬레이션과 관련된 기술 상담을 중심으로 구성했습니다.</p></details>
+<details><summary>해석만 의뢰할 수 있나요?</summary><p>프로젝트의 요구사항에 따라 범위를 협의하는 방식으로 안내하는 것이 적절합니다. 실제 제공 범위는 상담 후 확인이 필요합니다.</p></details>
+<details><summary>측정 시스템이나 제품도 상담할 수 있나요?</summary><p>공개 자료에 소개된 UVP, WDTMS, Electric Steam Trap, Bypass System 등 기술·제품 영역을 중심으로 상담 항목을 구성할 수 있습니다.</p></details>
+<details><summary>AI·Digital Twin도 현재 제공하나요?</summary><p>본 페이지에서는 미래 발전 방향으로 제안한 영역입니다. 실제 상용 서비스 여부와 제공 범위는 메탈젠텍 확인이 필요합니다.</p></details>
+</div>
+</div></section>
+
+<section id="contact" class="cta"><div class="wrap cta-inner reveal">
+<div><div class="eyebrow">07 · CONTACT</div><h2>복잡한 공정 문제,<br>공학적으로 함께 풀어보세요.</h2><p>현재 페이지의 상담·연락처 정보는 실제 운영 정보 확인 후 연결하세요. [전화번호 / 이메일 / 문의 URL 입력 필요]</p></div>
+<div><a class="btn primary" href="mailto:info@metalgentech.co.kr">문의 시작하기</a></div>
+</div></section>
+</main>
+
+<footer><div class="wrap footer-flex"><div>© METALGEN TECH. All rights reserved.</div><div>서울 금천구 가산디지털1로 219 · [최신 주소/대표 연락처 확인 필요]</div></div></footer>
+<script>
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}}));
+</script>
+
+</body></html>
